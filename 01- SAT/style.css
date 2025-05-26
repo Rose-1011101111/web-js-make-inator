@@ -1,0 +1,93 @@
+:root{
+    --bg: #aaddffbb;
+}
+p, label, input{
+    font-size: 2vw;
+}
+li, #urGood{
+    border: #00c groove 1vw;
+    padding: 2vw;
+    margin: 0;
+}
+ol{
+    padding-left: 4vw;
+}
+#urGood{
+    margin-left: 4vw;
+}
+li>p, #urGood>p{
+    font-weight: bold;
+    scale: 1.4;
+    margin-left: 10vw;
+}
+body{
+    margin: 0;
+}
+#grid{
+    display: grid;
+    align-items: center;
+    justify-items: center;
+    background-image:
+        radial-gradient(farthest-side at -100vw 10vh,#8f00cc55,70%, #00007755),
+        radial-gradient(farthest-side at 90vw 10vh,#330044ff, 50%, #ff009900),
+        radial-gradient(farthest-corner at 10vw 90vh,#f00,50%, #f0f)
+        ;
+    height: 100vh;
+    width: 100vw;
+}
+#container{
+    background-color: var(--bg);
+    padding: 2vw;
+    height: fit-content;
+    width: 70vw;
+    position: fixed;
+}
+input{
+    background-color: #00000000;
+    border: ridge #f0aa .25vw;
+}
+#linkContainer{
+    height: fit-content;
+    width: fit-content;
+    background-color: var(--bg);
+    align-self: start;
+    margin-top: 2vh;
+}
+a{
+    font-size: 1.5vw;
+    color: #000;
+}
+#apply{
+    background: #cc050544;
+}
+#apply:active{
+    background: #33fafa44;
+}
+
+@media (orientation:portrait){
+    p,label, input{
+        font-size: 8vw;
+        width: 88vw;
+    }
+    #apply{
+        height: fit-content;
+        width: fit-content;
+    }
+    li>p, #urGood>p{
+        margin-left: 13vw;
+        width: 68vw;
+    }
+    li>p:nth-child(1){
+        margin-bottom: 13vw;
+    }
+    #container{
+        width: 90vw;
+    }
+    a{
+    font-size: 8vw;
+    color: #000;
+    }
+    #linkContainer{
+        margin-top: 8vh;
+    }
+}
